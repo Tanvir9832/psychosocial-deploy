@@ -36,9 +36,10 @@ const signIn = async (req, res) => {
 
     let subject = "PSYCHOSOCIAL verification email";
     let btn = "verify";
-    mailSender(email, subject, name, link, btn);
 
-    res.status(200).json({
+    await mailSender(email, subject, name, link, btn , "verify your account" , "Click the verify button to to verify your account");
+
+    return res.status(200).json({
       success: true,
       message:
         "Congratulation ! Your Registration Successful \n Please Check Your Email To Verify Your Account",
@@ -441,7 +442,7 @@ const forgetPassword = async (req, res) => {
     //!send email
     let subject = "PSYCHOSOCIAL verification email";
     let btn = "reset";
-    mailSender(email, subject, user.name, link, btn);
+    await mailSender(email, subject, user.name, link, btn , "Reset Your Password", "Click the Reset button to change your old password and get a new Password");
 
     return res.status(200).json({
       success: true,
