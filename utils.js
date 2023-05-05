@@ -42,7 +42,9 @@ const mailSender = async(email, subject, name, link, btn , content , body) => {
           </html>`,
       }
     );
+    console.log("first");
   } catch (error) {
+    console.log(error);
     return res.status(500).json({message: "mail couldn't send"});
   }
 };
