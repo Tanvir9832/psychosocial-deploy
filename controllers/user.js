@@ -478,7 +478,7 @@ const forgetPasswordController = async (req, res) => {
 
       if (user) {
         if (newPassword === confirmPassword) {
-          if (newPassword >= 8) {
+          if (newPassword.length >= 8) {
             user.password = newPassword;
             await user.save();
             res.status(200).json({
