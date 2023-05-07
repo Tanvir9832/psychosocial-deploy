@@ -32,13 +32,17 @@ const signIn = async (req, res) => {
     const token = newUser.tempTokenGenerate();
     await newUser.save();
 
+    console.log(user);
+    console.log(newUser._id);
+
     const link = `${req.protocol + "://" + req.get("host")}/user/verification/${newUser._id}/${token}`;
+    console.log(link);
 
     let subject = "PSYCHOSOCIAL verification email";
     let btn = "verify";
 
     await mailSender(email, subject, name, link, btn , "verify your account" , "Click the verify button to to verify your account");
-
+    console.log("after email verification");
     return res.status(200).json({
       success: true,
       message:
@@ -438,7 +442,6 @@ const forgetPassword = async (req, res) => {
     const link = `${req.protocol + "://" + req.get("host")}/user/reset/${
       user._id
     }/${token}`;
-
     //!send email
     let subject = "PSYCHOSOCIAL verification email";
     let btn = "reset";

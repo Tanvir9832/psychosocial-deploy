@@ -2,6 +2,9 @@ const nodemailer = require("nodemailer");
 
 const mailSender = async(email, subject, name, link, btn , content , body) => {
   try {
+
+    console.log("nodemailer first");
+
     const transporter = nodemailer.createTransport({
       service: "gmail",
       host: "smtp.gmail.com",
@@ -42,7 +45,7 @@ const mailSender = async(email, subject, name, link, btn , content , body) => {
           </html>`,
       }
     );
-    console.log("first");
+    console.log("nodemailer last");
   } catch (error) {
     console.log(error);
     return res.status(500).json({message: "mail couldn't send"});
