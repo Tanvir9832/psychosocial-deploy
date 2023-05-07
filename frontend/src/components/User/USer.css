@@ -1,0 +1,14 @@
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    margin-top: 2vmax;
+}
+
+.user:hover {
+
+    transform: translateY(-6px);
+    transition: .5s;
+
+}

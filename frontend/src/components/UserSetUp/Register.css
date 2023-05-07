@@ -1,0 +1,18 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: auto;
+    flex-direction: column;
+    background: #001b2b;
+    padding: 5rem 3rem;
+    box-shadow: 5px 5px 10px #264653;
+}
+
+.link {
+    text-decoration: none;
+    color: #59CE8F;
+
+
+}

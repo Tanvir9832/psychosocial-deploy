@@ -1,0 +1,33 @@
+.search_form{
+    position: absolute;
+}
+.search_form_inputField{
+    margin-top: 25px ;
+    height: 35px;
+    width: 390px;
+    border : 0.6px solid #59CE8F;
+    outline: none;
+    position: relative;
+    left: 40px;
+    padding-right :50px;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+.search_form_button_icon{
+    color: #59CE8F;
+}
+.search_form_btn{
+    position: relative;
+    top: 6px;
+    border : 1px solid #59CE8F;
+    background: #001b2b;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width : 600px) {
+    .search_form_inputField{
+        width: 200px;
+    }
+}

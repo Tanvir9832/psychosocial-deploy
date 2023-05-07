@@ -8,6 +8,7 @@ const mailSender = require("../utils");
 const signIn = async (req, res) => {
   const { name, email, password } = req.body;
   try {
+    console.log(name);
     let user = await USER.findOne({ email: email });
     if (user)
       return res

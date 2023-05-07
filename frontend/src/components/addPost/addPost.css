@@ -1,0 +1,29 @@
+.newPostForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1vmax;
+    text-align: center;
+    background-color: #001b2b;
+    height: 50vh;
+    width: 60%;
+    padding: 3vmax;
+
+}
+
+.newPostForm>input[type='file']::-webkit-file-upload-button {
+    background-color: #59CE8F;
+    color: black;
+    width: 100%;
+    padding: 0.5vmax;
+    border-radius: 30px;
+}
+
+.newPostForm>textarea {
+    padding: 2vmax;
+    outline: none;
+    border: none;
+    font: 1em sans-serif;
+
+}

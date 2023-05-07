@@ -1,0 +1,23 @@
+.updateProfile{
+    display: flex;
+    flex-direction: column;
+    padding: 9vmax;
+    gap: 1vmax;
+    justify-content: center;
+    align-items: center;
+    color : white;
+
+}
+.delete_profile_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: auto auto;
+    text-align: center;
+    background: #001b2b;
+    padding: 10rem 5rem;
+    box-shadow: 5px 5px 10px #264653;
+    max-width: 560px;
+}

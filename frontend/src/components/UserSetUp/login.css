@@ -1,0 +1,19 @@
+.login_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: auto;
+    text-align: center;
+    background: #001b2b;
+    padding: 5rem 3rem;
+    box-shadow: 5px 5px 10px #264653;
+    max-width: 560px;
+}
+
+.link {
+    text-decoration: none;
+    color: #59CE8F;
+    letter-spacing: 1px;
+}

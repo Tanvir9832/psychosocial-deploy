@@ -1,0 +1,18 @@
+.navbar_link {
+    text-decoration: none;
+    color: #59CE8F;
+}
+
+.navbar_link:hover {
+    scale: 1.3;
+    transition: 0.4s;
+}
+
+
+
+@media screen and (max-width : 700px) {
+    .navbar_link {
+        text-decoration: none;
+        color: #59CE8F;
+    }
+}

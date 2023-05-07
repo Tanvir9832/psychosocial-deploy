@@ -1,0 +1,144 @@
+.post {
+    width: 40%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.post>img {
+    width: 95%;
+    align-self: center;
+
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.ownerDetails {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.postCaption {
+    margin-top: 5px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.ownerIdLink {
+    text-decoration: none;
+}
+
+.likes {
+    margin-left: 1.5%;
+    margin-bottom: 10px;
+    align-self: start;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    color: #59CE8F;
+}
+
+.likesAndComment {
+    display: flex;
+    gap: 5px;
+}
+
+.comment {
+    margin-left: 1.5%;
+    margin-bottom: 10px;
+    align-self: start;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    color: #59CE8F;
+}
+
+.post_Icon:hover {
+    transform: translateY(-4px);
+    transition: .5s;
+}
+
+.postHeader {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+    padding: 0.4vmax 0vmax 0vmax 0vmax;
+}
+
+.moreVertIcon {
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.comment_btn {
+    border: none;
+    background-color: #59CE8F;
+    cursor: pointer;
+}
+
+.comment_btn:hover {
+    scale: 1.1;
+    transition: 0.4s;
+}
+
+.comment_area {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    resize: none;
+}
+
+.comment_from {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment_from>button {
+    align-self: center;
+    
+}
+
+.postUpdate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+    text-align: center;
+}
+
+.postUpdate>textarea{
+    outline : none;
+    border : none;
+}
+
+
+@media (max-width : 1300px) {
+    .post{
+        width: 60%;
+    }
+}
+
+@media(max-width : 750px){
+    .post{
+        width: 80%;
+    }
+}
+@media(max-width : 600px){
+    .post{
+        width: 87%;
+    }
+}

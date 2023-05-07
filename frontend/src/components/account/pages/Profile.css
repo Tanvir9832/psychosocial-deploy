@@ -1,0 +1,11 @@
+.f_button{
+    border : none;
+    cursor: pointer;
+    color: #59CE8F;
+    background-color:  #EEE;
+    font-size: 17px;
+}
+.post_btn{
+    border : none;
+    background-color: #59CE8F;
+}

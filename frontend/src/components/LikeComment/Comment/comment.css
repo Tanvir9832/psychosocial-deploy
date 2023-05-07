@@ -1,0 +1,21 @@
+.update_comment_form {
+    background-color: #001b2b;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+}
+.comment_btn{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+@media  (max-width: 600px) {
+    .comment_area {
+    height: 10em;
+    width: 17em;
+}
+}
