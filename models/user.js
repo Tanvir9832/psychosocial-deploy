@@ -70,7 +70,7 @@ userSchema.methods.tempTokenGenerate =function(){
     const hash = crypto.randomBytes(20).toString('hex');
 
     this.tempToken = crypto.createHash("sha256").update(hash).digest('hex');
-    this.tokenTime = Date.now() + 7 * 60 * 1000;
+    this.tokenTime = Date.now() + 30 * 60 * 1000;
     return hash;
 }
 

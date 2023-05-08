@@ -34,7 +34,7 @@ const mailSender = async(email, subject, name, link, btn , content , body) => {
                       <h1>HELLO ${name.toUpperCase()}</h1>
                       <h2 style="color: rgb(0, 0, 0);">${content}</h2>
                   <div>
-                      <h4 style="color:rgb(0, 0, 0);">You have 7 minutes</h4>
+                      <h4 style="color:rgb(0, 0, 0);">You have 30 minutes</h4>
                       <p style="color: rgb(0, 0, 0)">
                         ${body}
                       </p>
